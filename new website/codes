@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.scanner.*;
+class codes{
+    public int codes(int[] nums){
+        int n;
+        int result=Integer.MIN_VALUE;
+        for(i=0;i<n;i++){
+            int j;
+            for(j=i+1;j<n;j++){
+                int prod=1;
+                for(k=i;k<=j;k++){
+                    prod*=nums[k];
+                    result=Math.max(result,prod);
+
+                }
+            }
+        }
+        return result;
+    }
+}
